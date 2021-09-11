@@ -61,16 +61,16 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
     try:
         Client = TelegramClient(StringSession(stri), aid, ahash)
         await Client.start()
-        ms = await Client.send_message('me',LANG['SIRIUSERBOT'])
+        ms = await Client.send_message('me',LANG['BOZQURDUSERBOT'])
         KanalId = await Client(CreateChannelRequest(
-            title='SiriUserBot BotLog',
+            title='BozQurd BotLog',
             about=LANG['AUTO_BOTLOG'],
             megagroup=True
         ))
 
         KanalId = KanalId.chats[0].id
 
-        Photo = await Client.upload_file(file='IMG_20210212_160031_170.jpg')
+        Photo = await Client.upload_file(file='bozqurd.jpg')
         await Client(EditPhotoRequest(channel=KanalId, 
             photo=Photo))
         msg = await Client.send_message(KanalId, LANG['DONT_LEAVE'])
@@ -132,8 +132,8 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @epicUserBot"
-    config['DEFAULT_NAME'] = "Sahip"
+    config['DEFAULT_BIO'] = "✨ @BozQurdUserBot"
+    config['DEFAULT_NAME'] = "Sahib"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
     config['CHROME_DRIVER'] = "/usr/sbin/chromedriver"
@@ -148,7 +148,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/thec0ala/userland"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/aykhan026/bozqurd"
     config['SEVGILI'] = "None"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
