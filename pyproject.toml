@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
-name = "SiriUserbot_Deployer"
+name = "BozQurdUserBot_Deployer"
 version = "1.0"
-description = "Automatic Deploy SiriUserBot to Heroku"
-authors = ["ErdemBey"]
+description = "Automatic Deploy BozQurdUserBot to Heroku"
+authors = ["aykhan026"]
 [tool.poetry.dependencies]
 python = "^3.8"
 bs4 = "*"
