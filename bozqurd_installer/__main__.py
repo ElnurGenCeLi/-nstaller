@@ -97,7 +97,6 @@ if __name__ == "__main__":
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
-    SyperStringKey = "UserLand"
     baslangic = time()
 
 
@@ -107,9 +106,12 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
+    
+    qurd = "https://github.com/aykhan026/BozQurd/"
+    key = 
     if os.path.isdir("./BozQurd/"):
         rm_r("./BozQurd/")
-    repo = eval(Sifrele(b'\x68\x74\x74\x70\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x61\x79\x6B\x68\x61\x6E\x30\x32\x36\x2F\x62\x6F\x7A\x71\x75\x72\x64\x20\x22\x2E\x2F\x55\x73\x65\x72\x4C\x61\x6E\x64\x2F\x22\x2C\x20\x62\x72\x61\x6E\x63\x68\x3D\x22\x6D\x61\x69\x6E\x22').decode("utf-8"))
+    repo = Repo.clone_from(str1,"./BozQurd/", branch="main")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
