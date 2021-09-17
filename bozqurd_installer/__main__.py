@@ -114,9 +114,9 @@ if __name__ == "__main__":
     installer_sifrelenib = sifre1.decode("utf8")
     bozqurd = sifre2.decode("utf8")
     aykhan_s = sifre3.decode("utf8")
-    if os.path.isdir("./BozQurd/"):
-        rm_r("./BozQurd/")
-    repo = Repo.clone_from(installer_sifrelenib,"bozqurd", aykhan_s)
+    if os.path.isdir("bozqurd"):
+        rm_r("bozqurd")
+    repo = Repo.clone_from(installer_sifrelenib,"bozqurd", branch="main")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
