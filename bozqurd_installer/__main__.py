@@ -110,11 +110,13 @@ if __name__ == "__main__":
     # Kopyalayan Peysərdi...!!!
     sifre1 = b"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x61\x79\x6B\x68\x61\x6E\x30\x32\x36\x2F\x42\x6F\x7A\x51\x75\x72\x64\x2F"
     sifre2 = b"\x2E\x2F\x42\x6F\x7A\x51\x75\x72\x64\x2F"
+    sifre3 = b"\x62\x72\x61\x6E\x63\x68\x3D\x22\x6D\x61\x69\x6E\x22"
     installer_sifrelenib = sifre1.decode("utf8")
     bozqurd = sifre2.decode("utf8")
-    if os.path.isdir("./BozQurd/"):
-        rm_r("./BozQurd/")
-    repo = Repo.clone_from(installer_sifrelenib,"bozqurd", branch="main")
+    aykhan_s = sifre3.decode("utf8")
+    if os.path.isdir("bozqurd"):
+        rm_r("bozqurd")
+    repo = Repo.clone_from(installer_sifrelenib,"bozqurd", aykhan_s)
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
