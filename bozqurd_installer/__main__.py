@@ -133,7 +133,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @BozQurdUserBot"
+    config['DEFAULT_BIO'] = "🐺 @BozQurdUserBot"
     config['DEFAULT_NAME'] = "Sahib"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     config['STRING_SESSION'] = stri
     config['HEROKU_MEMEZ'] = "True"
     config['LOGSPAMMER'] = "False"
-    config['PM_AUTO_BAN'] = "False"
+    config['PM_AUTO_BAN'] = "True"
     config['PM_AUTO_BAN_LIMIT'] = "4"
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
