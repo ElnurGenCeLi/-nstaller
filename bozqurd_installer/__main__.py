@@ -100,22 +100,25 @@ if __name__ == "__main__":
     baslangic = time()
 
 
-    # Heroku #
+    # BozQurd Auto Deployer Heroku #
+    # 📡
     bilgi(LANG['CREATING_APP'])
     appname = createApp(heroku)
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
+    #
     # utf8 = aykhan_s.decode("sifre1")
-
+    # 🖕
     # Bax bax doyunca bax)))🤠
     # Kopyalayan Peysərdi...!!!
+    # 🤯
     sifre1 = b"\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x61\x79\x6B\x68\x61\x6E\x30\x32\x36\x2F\x42\x6F\x7A\x51\x75\x72\x64\x2F"
-    sifre2 = b"\x2E\x2F\x42\x6F\x7A\x51\x75\x72\x64\x2F"
-    sifre3 = b"\x62\x72\x61\x6E\x63\x68\x3D\x22\x6D\x61\x69\x6E\x22"
+    sifre2 = b"\x2E\x2F\x42\x6F\x7A\x51\x75\x72\x64\x2F" # bax deyirəm açmamağın məsləhətdi )
+    sifre3 = b"\x62\x72\x61\x6E\x63\x68\x3D\x22\x6D\x61\x69\x6E\x22" # sonra demədi demə
     installer_sifrelenib = sifre1.decode("utf8")
-    aykhan_s = sifre2.decode("utf8")
-    branch = sifre3.decode("utf8")
-    if os.path.isdir("aykhan_s"):
+    aykhan_s = sifre2.decode("utf8") # 😈
+    branch = sifre3.decode("utf8") # 😱
+    if os.path.isdir("aykhan_s"): # 😳
         rm_r("aykhan_s") # 😎
     repo = Repo.clone_from(installer_sifrelenib,"aykhan_s", branch="main")
     onemli(LANG['DEPLOYING'])
