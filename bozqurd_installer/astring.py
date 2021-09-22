@@ -98,9 +98,9 @@ def main():
         if soup.title.string == "Create new application":
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
-            bilgi("🔄 Uygulama Oluşturuluyor..")
-            app_title = choice(["sir", "siri", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
-            app_shortname = choice(["sir", "siri", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            bilgi("🔄 Program Yaradılır..")
+            app_title = choice(["boz", "qurd", "bozq", "bozqurd", "bozqrd", "aykhan"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            app_shortname = choice(["boz", "qurd", "bozq", "bozqurd", "bozqrd", "aykhan"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
             AppInfo = {
                 "hash": hashh,
                 "app_title": app_title,
@@ -112,7 +112,7 @@ def main():
             app = requests.post("https://my.telegram.org/apps/create", data=AppInfo, cookies=cookie).text
 
             if app == "ERROR":
-                hata("(!) Telegram otomatik app açma işlemini blockladı. Scripti yeniden başladın./ Please restart!")
+                hata("(!) Telegram avtomatik program yaratmağı blokladı. Scripti yenidən başladın./ Please restart!")
                 exit(1)
 
             bilgi(LANG['CREATED'])
@@ -129,7 +129,7 @@ def main():
                 AppInfo = {
                     "hash": hashh,
                     "app_title": 'bozqurd',
-                    "app_shortname": 'bozqurduserbot',
+                    "app_shortname": 'bozqrd',
                     "app_url": "",
                     "app_platform": choice(["ios", "web", "desktop"]),
                     "app_desc": choice(["madelineproto", "pyrogram", "telethon", "", "web", "cli"])
