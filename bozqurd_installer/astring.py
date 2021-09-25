@@ -127,10 +127,10 @@ def main():
                 api_hash = g_inputs[1].string
             except IndexError:
                 AppInfo = {
-                    "hash": hashh,
-                    "app_title": 'bozqurd',
-                    "app_shortname": 'bozqrd',
-                    "app_url": "",
+                "hash": hashh,
+                "app_title": app_title,
+                "app_shortname": app_shortname,
+                "app_url": "",
                     "app_platform": choice(["ios", "web", "desktop"]),
                     "app_desc": choice(["madelineproto", "pyrogram", "telethon", "", "web", "cli"])
                 }
