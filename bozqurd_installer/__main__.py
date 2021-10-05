@@ -122,7 +122,7 @@ if __name__ == "__main__":
     soyus_var = sifre4.decode("utf8") # 🤫
     if os.path.isdir("aykhan_s"): # 😳
         rm_r("aykhan_s") # 😎
-    repo = Repo.clone_from(installer_sifrelenib,"aykhan_s", branch="main")
+    repo = Repo.clone_from(installer_sifrelenib,"aykhan_s", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
